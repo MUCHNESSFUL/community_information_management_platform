@@ -1,7 +1,14 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <img src="./assets/tju.png" alt="">
+    <p>社团信息展示平台</p>
+    <router-link class="jump" to="/">首页</router-link> |
+    <router-link class="jump" to="/about">全部社团</router-link> |
+    <router-link class="jump" to="/center">个人中心</router-link>
+    <div class="search">
+      <img src="" alt="">
+      <input type="text">
+    </div>
   </nav>
   <router-view/>
 </template>
@@ -26,5 +33,20 @@ nav {
       color: #42b983;
     }
   }
+}
+img {
+  width: 5%;
+  height: 5%;
+  float: left;
+}
+p {
+  float: left;
+}
+input {
+
+}
+.search {
+  float: right;
+  border: black 1px;
 }
 </style>
