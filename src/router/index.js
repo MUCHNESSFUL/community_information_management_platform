@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import center from '../views/center.vue'
+import search from '../views/search.vue'
+import message from '../views/search/message.vue'
+import department from '../views/search/department.vue'
 
 const routes = [
   {
@@ -20,7 +23,24 @@ const routes = [
     path: '/center',
     name: 'center',
     component: center
-  }
+  },
+  {
+    path:'/search',
+    name:'search',
+    component: search,
+    children: [
+      {
+        path:'message',
+        component: message
+      },
+      {
+        path:'department',
+        component: department
+      }
+  ],
+  },
+  
+  
 ]
 
 const router = createRouter({

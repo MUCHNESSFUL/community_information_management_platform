@@ -1,19 +1,33 @@
 <template>
-  <nav>
-    <img src="./assets/tju.png" alt="">
-    <p>社团信息展示平台</p>
-    <router-link class="jump" to="/">首页</router-link> |
-    <router-link class="jump" to="/about">全部社团</router-link> |
-    <router-link class="jump" to="/center">个人中心</router-link>
-    <div class="search">
+  <div id="top">
+    <img src="../src/assets/tju.png" style="float: left; width: 6%; height: 6%;" alt="天津大学">
+    <p id="title">社团信息展示平台</p>
+    <p class="search">
       <img src="" alt="">
-      <input type="text">
-    </div>
-  </nav>
-  <router-view/>
+      <input id="searchName" placeholder="搜索社团" @keyup.enter="add" type="text">
+    </p>
+    <nav>
+      <router-link class="jump" to="/">首页</router-link> |
+      <router-link class="jump" to="/about">全部社团</router-link> |
+      <router-link class="jump" to="/center">个人中心</router-link>
+    </nav>
+    
+    <hr>
+    <router-view/>
+  </div>
 </template>
 
-<style lang="scss">
+<script>
+  export default {
+    methods:{
+      add(){
+        this.$router.push('/search')
+      }
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,6 +41,7 @@ nav {
 
   a {
     font-weight: bold;
+    font-size: 35px;
     color: #2c3e50;
 
     &.router-link-exact-active {
@@ -35,18 +50,32 @@ nav {
   }
 }
 img {
-  width: 5%;
-  height: 5%;
+  width: 8%;
+  height: 8%;
+  border: 0;
+  margin: 0;
   float: left;
 }
-p {
+#title {
+  margin-top: 20px;
+  margin-right: 120px;
   float: left;
-}
-input {
-
+  font-size: 40px;
 }
 .search {
+  border: black 4px solid;
+  margin-top: 33px;
+  margin-right: 30px;
+  border-radius: 20px;
   float: right;
-  border: black 1px;
 }
+
+#searchName {
+  border: 0;
+  outline: none;
+  width: 400px;
+  height: 20px;
+  margin: 5px;
+}
+
 </style>
