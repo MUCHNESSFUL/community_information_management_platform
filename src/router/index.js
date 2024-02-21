@@ -4,6 +4,7 @@ import center from '../views/center.vue'
 import search from '../views/search.vue'
 import message from '../views/search/message.vue'
 import department from '../views/search/department.vue'
+import read from '../views/read.vue'
 
 const routes = [
   {
@@ -39,7 +40,11 @@ const routes = [
       }
   ],
   },
-  
+  {
+    path:'/read',
+    name:'/read',
+    component:read
+  }
   
 ]
 

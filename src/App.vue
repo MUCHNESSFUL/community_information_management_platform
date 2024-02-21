@@ -63,7 +63,7 @@ img {
   font-size: 40px;
 }
 .search {
-  border: black 4px solid;
+  border: black 1px solid;
   margin-top: 33px;
   margin-right: 30px;
   border-radius: 20px;

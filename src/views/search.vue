@@ -23,11 +23,12 @@ export default {
         width: 100%;
         height: 250px;
     }
-    nav {
-        margin-left: 15%;
+    nav{
+        margin-left: 150px;
     }
-    a{
-        color: black;
+    a {
+        font-size: 20px;
+        text-decoration: none;
     }
     a:hover {
         color:rgb(118, 193, 216);
