@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" >
+    <title>page16</title>
+    <style>
+        #container16 {
+            font-family: 苹方-简;
+            font-size: 2em;
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            position: absolute;
+            bottom: 50px;
+            left: 450px;
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            padding: 20px
+        }
+
+        li {
+            width: 80%;
+            height: 20px;
+            border: 2px none;
+
+        }
+
+        #zihao {
+            width: 97%;
+            height: 40px;
+            text-align: left;
+        }
+
+
+
+
+        #ziti1 {
+            width: 48%;
+            height: 46px;
+            text-align: left;
+        }
+
+        #dpnc1 {
+            list-style-type: none;
+            display: none;
+            position: absolute;
+            height: 80px;
+            width: 200px;
+            overflow-y: scroll;
+            font-size: 0.5em;
+            background-color: white;
+            margin: 0;
+        }
+
+        #ziti1:hover+#dpnc1 {
+            display: block;
+        }
+
+        #dpnc1:hover {
+            display: block
+        }
+
+        #ziti2 {
+            width: 48%;
+            height: 46px;
+            text-align: left;
+        }
+
+        #dpnc2 {
+            list-style-type: none;
+            display: none;
+            position: absolute;
+            height: 80px;
+            width: 200px;
+            overflow-y: scroll;
+            font-size: 0.5em;
+            background-color: white;
+            margin: 0;
+        }
+
+        #ziti2:hover+#dpnc2 {
+            display: block;
+        }
+
+        #dpnc2:hover {
+            display: block
+        }
+
+        #queding {
+            height: 50px;
+            width: 40%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container16">
+        字号
+        <br />
+
+        <input id="zihao" value="24" type="number" name="zihao">
+        <br />
+        字体
+        <br />
+        <button id="ziti1"  name="ziti1">宋体</button>
+        <ul id="dpnc1">
+            <li>宋体</li>
+            <li>隶书</li>
+            <li>楷书</li>
+            <li>草书</li>
+            <li>行书</li>
+        </ul>
+        <button id="ziti2"  name="ziti2">Arial</button>
+        <ul id="dpnc2">
+            <li>Arial</li>
+            <li>隶书</li>
+            <li>楷书</li>
+            <li>草书</li>
+            <li>行书</li>
+        </ul>
+        <br />
+        <br />
+
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button id="queding"> 确定</button>
+    </div>
+</body>
+
+</html>
