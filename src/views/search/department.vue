@@ -23,7 +23,7 @@
 export default {
   methods: {
     departmentJump(){
-      this.$router.push('/search/departmentDetail')
+      this.$router.push('/home/search/departmentDetail')
     }
   },
 }

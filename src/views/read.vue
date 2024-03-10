@@ -59,7 +59,7 @@ export default {
             this.isFollow = !this.isFollow
         },
         returnClub(){
-            this.$router.push('/search/message')
+            this.$router.push('/home/search/message')
         }
     },
 }

@@ -39,10 +39,10 @@ export default {
     },
     methods: {
         message() {
-            this.$router.push('/search/message')
+            this.$router.push('/home/search/message')
         },
         department() {
-            this.$router.push('/search/department')
+            this.$router.push('/home/search/department')
         },
         show(){
             document.getElementById('text2').setAttribute("style","max-height:9999px")

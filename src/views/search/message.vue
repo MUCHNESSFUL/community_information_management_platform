@@ -48,7 +48,7 @@ export default {
     },
     methods:{
         readComplete(){
-            this.$router.push('/read')
+            this.$router.push('/home/read')
         },
         deleteAndTop(){
             this.manageShow = !this.manageShow
@@ -73,7 +73,7 @@ export default {
         margin-top: 40px;
     }
     .message {
-        width: 1000px;
+        width: 1200px;
         margin-top: 50px;
         background-color: #fff;
 
