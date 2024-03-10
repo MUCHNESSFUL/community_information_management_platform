@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8"> 
+    <title>page17</title>
+    <style>  
+        #container17 {  
+            font-family: 苹方-简;
+            font-size: 1.5em;
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            position: absolute;
+            bottom: 50px;
+            left: 450px;
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            padding: 20px
+        }
+
+        #wenzhangleixing {
+            width: 308px;
+            height: 36px;
+            text-align: left;
+        }
+
+        #dpnc {
+            list-style-type: none;
+            display: none;
+            position: absolute;
+            height: 80px;
+            width: 200px;
+            overflow-y: scroll;
+            font-size: 0.5em;
+            background-color: white;
+            margin: 0;
+        }
+
+        li {
+            width: 80%;
+            height: 20px;
+            border: 2px none ;
+            
+        }
+        #wenzhangleixing:hover+#dpnc{display: block;}
+        #dpnc:hover{display:block}
+        #jubanshijian {
+            width: 100%;
+            height: 30px;
+            text-align: left;
+        }
+
+        #xiangguanlianjie {
+            width: 100%;
+            height: 30px;
+            text-align: left;
+        }
+
+        #queding {
+            height: 50px;
+            width: 40%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container17">
+        文章类型
+        <br />
+        <button id="wenzhangleixing" type="text" name="wenzhangleixing">通知</button>
+        <ul id="dpnc">
+            <li>通知</li>
+            <li>新闻</li>
+            <li>招新</li>
+            <li>活动</li>
+            <li>宣传</li>
+        </ul>
+        <br />
+        举办时间
+        <br />
+
+        <input id="jubanshijian" type="text" name="jubanshijian">
+        <br />
+        相关链接
+        <br />
+
+        <input id="xiangguanlianjie" type="text" name="xiangguanlianjie">
+
+        <br />
+        <br />
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button id="queding"> 确定</button>
+    </div>
+</body>
+
+</html>
