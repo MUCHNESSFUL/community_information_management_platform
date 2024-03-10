@@ -4,8 +4,9 @@
         <div>
             <p>{{ name }}</p>
             <div class="box">
-                <p class="content" id="text">
+                <p class="content" id="text2">
                 你好你好，这里是简介，本社团分为，wota艺部，cos部，等等等等一系列部门，欢迎各位萌新大佬加入！！！！
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla ab doloribus temporibus atque, nesciunt facere reprehenderit repudiandae. Quisquam nam impedit blanditiis odit delectus, libero itaque iste cum iusto incidunt ut accusamus magni unde laudantium, qui quae ratione laborum ab autem quo! Modi repellat, optio vitae architecto explicabo ullam atque non ipsam commodi minima ut cum pariatur voluptatum beatae itaque laudantium quo est maxime in voluptatibus maiores. Deleniti id, consectetur laboriosam a facere autem cupiditate beatae corporis numquam laudantium esse facilis, quasi quas, in expedita quos recusandae fugit nam atque quidem excepturi. Unde facere maxime tempore obcaecati iusto magnam sint.
                 </p>  
                 <button id="show" class="btn" @click="show">展开</button>
                 <button class="btn" @click="hide">隐藏</button>
@@ -27,10 +28,10 @@ export default {
     },
     methods:{
         show(){
-            document.getElementById('text').setAttribute("style","max-height:9999px")
+            document.getElementById('text2').setAttribute("style","max-height:9999px")
         },
         hide(){
-            document.getElementById('text').setAttribute("style","max-height:50px")
+            document.getElementById('text2').setAttribute("style","max-height:40px")
         }
     }
 }
@@ -50,7 +51,7 @@ export default {
     }
 
     .content {
-        max-height: 50px;
+        max-height: 40px;
         overflow: hidden;
         transition: max-height .5s ease;
     }

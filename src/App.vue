@@ -3,7 +3,6 @@
     <img src="../src/assets/tju.png" style="float: left; width: 6%; height: 6%;" alt="天津大学">
     <p id="title">社团信息展示平台</p>
     <p class="search">
-      <img src="" alt="">
       <input id="searchName" placeholder="搜索社团" @keyup.enter="add" type="text">
     </p>
     <nav>
@@ -21,7 +20,7 @@
   export default {
     methods:{
       add(){
-        this.$router.push('/search')
+        this.$router.push('/search/message')
       }
     }
   }

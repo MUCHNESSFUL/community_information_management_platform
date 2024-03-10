@@ -88,7 +88,7 @@ export default {
         margin-left: 30px;
     }
     .persons {
-        margin-left: 50px;
+        margin-left: 30px;
     }
 
     .center {

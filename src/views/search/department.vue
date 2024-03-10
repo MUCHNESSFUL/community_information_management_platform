@@ -21,7 +21,11 @@
 
 <script>
 export default {
-
+  methods: {
+    departmentJump(){
+      this.$router.push('/search/departmentDetail')
+    }
+  },
 }
 </script>
 
