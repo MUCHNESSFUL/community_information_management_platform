@@ -1,126 +1,76 @@
 <template>
-  <div>
-    <div class="middle">
-        <div class="sidenav">
-            <button class="dropdown-btn">校级社团
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-              <a href="./community1.html">文化体育类</a>
-              <a href="#">学术科技类</a>
-              <a href="#">自律互动类</a>
-              <a href="#">媒体宣传类</a>
-              <a href="#">思想政治类</a>
-              <a href="#">校园服务类</a>
-              <a href="#">志愿公益类</a>
-              <a href="#">创业创新类</a>
-            </div>
-            <a href="#contact">院级社团</a>
-          </div>
-        <div class="main">
-            <div class="shetuan">
-                <img src="../assets/5.png" alt="">
-                <div class="wd">
-                <h2 id="h2">A社(老校区)</h2>
-                <p class="p">这里是简介</p>
-                </div>
-                <div class="bt">
-                <button class="btn">关注</button>
-                </div>
-            </div>
-        </div>
 
+  <div class="body">
+    <div id="one">
+      <button class="inOne" style="margin-top: 100px;" @click="showTwo">校级社团</button>
+      <button class="inOne">院级社团</button>
+    </div>
+    <div id="two" v-show="twoShow">
+      <button class="inTwo" style="margin-top: 135px;" @click="showThree">文化体育类</button>
+      <button class="inTwo">学术科技类</button>
+      <button class="inTwo">自律互动类</button>
+      <button class="inTwo">媒体宣传类</button>
+      <button class="inTwo">思想政治类</button>
+      <button class="inTwo">校园服务类</button>
+      <button class="inTwo">志愿公益类</button>
+      <button class="inTwo">创业创新类</button>
+    </div>
+    <div id="three" v-show="threeShow">
+      <button class="inThree" style="margin-top: 170px;">新校区</button>
+      <button class="inThree" @click="showFour">老校区</button>
+    </div>  
+    <div id="four" v-show="fourShow">
+      <div class="shetuan">
+          <img src="../assets/5.png" alt="">
+          <div class="wd">
+          <h2>A社(老校区)</h2>
+          <p class="p">这里是简介</p>
+          </div>
+          <div class="bt">
+          <button class="btn">关注</button>
+          </div>
+      </div>
     </div>
   </div>
+
 </template>
 
           
 <script>
-/* 遍历所有下拉按钮以在隐藏和显示其下拉内容之间切换 - 这允许用户拥有多个下拉列表而不会发生任何冲突 */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
+  export default {
+    data() {
+      return {
+        twoShow:false,
+        threeShow:false,
+        fourShow:false
+      }
+    },
+    methods: {
+      showTwo(){
+        this.twoShow = !this.twoShow
+        if(this.threeShow == true || this.fourShow == true){
+          this.threeShow = !this.threeShow
+          this.fourShow = !this.fourShow
+        }
+      },
+      showThree(){
+        this.threeShow = !this.threeShow
+      },
+      showFour(){
+        this.fourShow = !this.fourShow
+      }
+    },
   }
-  });
-}
 </script>
 
 <style scopde>
-  /* 固定 sidenav，全高 */
-  .sidenav {
-    height: 80%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 20%;
-    left: 0;
-    background-color:white;
-    overflow-x: hidden;
-    padding-top: 20px;
+  .body{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
   }
   
-  /* 为 sidenav 链接和下拉按钮设置样式 */
-  .sidenav a, .dropdown-btn {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  /* 鼠标悬停时 */
-  .sidenav a:hover, .dropdown-btn:hover {
-    color: #f1f1f1;
-  }
-  
-  /* 主要内容 */
-  .main {
-     position: absolute;
-      margin-left: 16%;
-      margin-top: 9%;
-      width: 78%;
-      height:78%;
-  }
-  
-  /* 为活动下拉按钮添加一个活动类 */
-  .active {
-    background-color: skyblue;
-    color: white;
-  }
-  
-  /* 下拉容器（默认隐藏）。 可选：添加较浅的背景颜色和一些左侧填充以更改下拉内容的设计 */
-  .dropdown-container {
-    display: none;
-    background-color: gainsboro;
-    padding-left: 8px;
-  }
-  
-  /* 可选：向下插入符号图标样式 */
-  .fa-caret-down {
-    float: right;
-    padding-right: 8px;
-  }
-  
-  /* 响应式的一些媒体查询 */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
   .shetuan{
     position: relative;
     border-radius: 20px;
@@ -135,13 +85,6 @@ for (i = 0; i < dropdown.length; i++) {
     margin-top: 20px;
     margin-left: 20px;
     width: 100px;
-}
-
-#h2{
-    float: left;
-    margin-top: 5%;
-    margin-left: 20px;
-    font-size: 25px;
 }
 
 .p{
@@ -163,5 +106,61 @@ for (i = 0; i < dropdown.length; i++) {
  .btn{
     width: 70px;
     height:30px
+ }
+ .inOne{
+  border: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 26px;
+  font-family: serif;
+ }
+
+ .inTwo{
+  border: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 26px;
+  font-family: serif;
+ }
+
+ .inThree{
+  border: 0;  
+  width: 100%;
+  height: 70px;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  font-size: 26px;
+  font-family: serif;
+ }
+
+ #one{
+  height: 100%;
+  width: 10%;
+  background-color: #EFEFEF;
+  border-right: 2px black solid;
+ }
+
+ #two{
+  width: 10%;
+  background-color: #E9E9E9;
+  border-right: 2px black solid;
+ }
+
+ #three{
+  width: 10%;
+  background-color: #E2E2E2;
+  border-right: 2px black solid;  
+ }
+
+ #four{
+  width: 70%;
  }
 </style>

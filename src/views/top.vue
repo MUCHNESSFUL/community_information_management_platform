@@ -14,7 +14,7 @@
         <button  class="a3 btn1" @click="center">个人中心</button>
       </nav>
       
-      <hr>
+      <hr style="margin: 0;">
       <router-view/>
     </div>
   </template>
