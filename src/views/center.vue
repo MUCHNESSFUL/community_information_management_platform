@@ -59,7 +59,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .clearfix:before,.clearfix:after {
     content: "";

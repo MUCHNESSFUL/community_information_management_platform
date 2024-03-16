@@ -14,7 +14,7 @@
                     <button class="btn" @click="hide">隐藏</button>
                 </div>
             </div>
-            <div style="display: flex;">
+            <div style="display: flex; margin-top: 18px;">
                 <button class="asideButton" id="apply">申请入社</button>
                 <button class="asideButton" id="follow" v-show="!follow" @click="followClub">已关注</button>
                 <button class="asideButton" id="follow" v-show="follow" @click="followClub">关注</button>
@@ -127,7 +127,7 @@ export default {
     }
 
     #apply{
-        margin-left: 500px;
+        margin-left: 900px;
     }
 
     #follow{

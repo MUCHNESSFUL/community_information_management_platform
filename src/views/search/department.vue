@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   #departmentFather {
     display: flex;
     flex-wrap: wrap;

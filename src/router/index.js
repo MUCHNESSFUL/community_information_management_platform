@@ -11,6 +11,7 @@ import login from '@/views/login.vue'
 import top from '@/views/top.vue'
 import signup from '@/views/signup.vue'
 import error from  '@/views/404.vue'
+import follow from '@/views/follow.vue'
 
 const routes = [
   {
@@ -55,6 +56,11 @@ const routes = [
         path:'searchList',
         name:'searchList',
         component: searchList
+      },
+      {
+        path:'follow',
+        name:'follow',
+        component:follow,
       },
       {
         path:'search',
