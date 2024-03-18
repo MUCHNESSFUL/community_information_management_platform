@@ -89,6 +89,8 @@ export default {
     float: left;
     width: 990px;
     height: 570px;
+    margin-left: 5%;
+    margin-top: -5%;
 }
 
 .head img{
@@ -149,7 +151,8 @@ td:nth-child(2)
     width: 480px;
     height: 570px;
     font-size: 20px;
-    margin-top: 15%;
+    margin-top: 5%;
+    margin-left: 8%;
 }
 
 .wd{
@@ -177,7 +180,6 @@ td:nth-child(2)
     float: left;
     text-align: center;
     padding-left: 14px;
-    padding-top: 16px;
 }
 
 .focus button{

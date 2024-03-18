@@ -51,7 +51,7 @@ export default {
 }
 
 #title{
-    margin-left: 500px;
+    margin-left: 600px;
     letter-spacing: 10px;
     font-family: 楷体;
     font-size: 3em;

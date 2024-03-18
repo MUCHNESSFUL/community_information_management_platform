@@ -59,7 +59,7 @@
   .search {
     border: black 1px solid;
     margin-top: 33px;
-    margin-right:100px;
+    margin-right:0px;
     border-radius: 20px;
     padding: 5px;
     float: right;
@@ -69,7 +69,7 @@
     margin-right: 120px;
     background-color: transparent;
     border: 0;
-    width: 130px;
+    width: 140px;
     font-size: 30px;
     margin-top:35px;
     margin-bottom: 50px;

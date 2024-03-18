@@ -24,7 +24,7 @@
             <div class="biaoti">社团简介</div>
             <div class="intro">你好你好，这里是简介，本社团分为，XXX部，XXX部等等等等一系列部门，欢迎各位萌新大佬加入！！！！</div>
             <div class="bottom">
-                <button @click="clubSpace">社团空间</button>
+                <button @click="clubSpace" class="btn2">社团空间</button>
             </div>
     </div>
     </div>
@@ -110,12 +110,13 @@
     width: 30%;
     height:25%;
     margin-left: 70%;
+    margin-top: 3%;
 }
 
 .btn{
     float: left;
-    width: 70%;
-    height: 20%;
+    width: 55%;
+    height: 15%;
     margin-left: 15%;
     margin-top:10%;
     border:1px solid black;
@@ -149,11 +150,19 @@
     border: 1px solid black;
     border-radius: 15px;
     padding-top: 5px;
+    padding-left: 5px;
 }
 
 .bottom{
-    margin-top: 40%;
+    position: absolute;
+    margin-top: 20%;
     margin-left: 35%;
     font-size: 30px;
+}
+
+.btn2{
+    position: absolute;
+    width: 100px;
+    height: 50px;
 }
 </style>

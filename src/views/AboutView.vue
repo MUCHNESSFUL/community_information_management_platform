@@ -21,7 +21,7 @@
     </div>  
     <div id="four" v-show="fourShow">
       <div class="shetuan">
-          <img src="../assets/5.png" alt="">
+          <img src="../assets/5.png" alt="" @click="jupmMessage">
           <div class="wd">
           <h2>A社(老校区)</h2>
           <p class="p">这里是简介</p>
@@ -58,7 +58,10 @@
       },
       showFour(){
         this.fourShow = !this.fourShow
-      }
+      },
+      jupmMessage(){
+            this.$router.push('/home/search/message')
+        }
     },
   }
 </script>
@@ -76,7 +79,8 @@
     border-radius: 20px;
     width: 500px;
     height: 150px;
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-left: 5%;
     border: 1px solid black;
 }
 
@@ -89,55 +93,59 @@
 
 .p{
     padding-left: 50px;
-    margin-top: 1%;
     margin-left: 18%;
-    padding-top: 60px;
     width: 150px;
     font-size: 15px;
  }
+
+.wd{
+  margin-left: 5%;
+}
 
  .bt{
     width: 100px;
     height:100px;
     margin-left: 80%;
-    margin-top: -10%;
+    margin-top: -15%;
  }
 
  .btn{
     width: 70px;
-    height:30px
+    height:30px;
  }
+
  .inOne{
   border: 0;
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: #FFFFFF;
   margin-top: 10px;
   text-align: center;
-  line-height: 70px;
-  font-size: 26px;
+  line-height: 50px;
+  font-size: 20px;
   font-family: serif;
  }
 
  .inTwo{
   border: 0;
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: #FFFFFF;
   margin-top: 10px;
   text-align: center;
-  line-height: 70px;
-  font-size: 26px;
+  line-height: 50px;
+  font-size: 20px;
   font-family: serif;
  }
 
  .inThree{
   border: 0;  
   width: 100%;
-  height: 70px;
+  height: 50px;
+  line-height: 50px;
   background-color: #FFFFFF;
   margin-top: 10px;
-  font-size: 26px;
+  font-size: 20px;
   font-family: serif;
  }
 
