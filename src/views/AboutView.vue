@@ -1,6 +1,6 @@
 <template>
 
-  <div class="body">
+  <div id="body1">
     <div id="one">
       <button class="inOne" style="margin-top: 100px;" @click="showTwo">校级社团</button>
       <button class="inOne">院级社团</button>
@@ -21,9 +21,9 @@
     </div>  
     <div id="four" v-show="fourShow">
       <div class="shetuan">
-          <img src="../assets/5.png" alt="" @click="jupmMessage">
+          <img src="../assets/5.png" alt="">
           <div class="wd">
-          <h2>A社(老校区)</h2>
+          <h2 style="margin-left: 130px;">A社(老校区)</h2>
           <p class="p">这里是简介</p>
           </div>
           <div class="bt">
@@ -50,24 +50,24 @@
         this.twoShow = !this.twoShow
         if(this.threeShow == true || this.fourShow == true){
           this.threeShow = !this.threeShow
-          this.fourShow = !this.fourShow
+          this.fourShow = false
         }
       },
       showThree(){
         this.threeShow = !this.threeShow
+        if(this.fourShow == true){
+          this.fourShow = !this.fourShow
+        }
       },
       showFour(){
         this.fourShow = !this.fourShow
-      },
-      jupmMessage(){
-            this.$router.push('/home/search/message')
-        }
+      }
     },
   }
 </script>
 
-<style scopde>
-  .body{
+<style scoped>
+  #body1{
   position: fixed;
   width: 100%;
   height: 100%;

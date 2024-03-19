@@ -1,5 +1,5 @@
 <template>
-<div class="body wrapper">
+<div>
     <div class="left">
         <p id="first">XXXX活动</p>
         <p id="second">编辑：坤坤</p>
@@ -8,7 +8,7 @@
     <div class="right">
         <div class="head">
         <div class="le">
-             <p id="fourth">XXX社团</p>
+             <p id="fourth">XXX社团   </p>
              <p id="fifth">&emsp;社长：xxx&emsp;副社长：xxx&emsp;指导老师：xxx</p>
         </div>
         <div class="ri">

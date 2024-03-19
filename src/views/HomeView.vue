@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <div class="body wrapper">
+  <div>   
         <div class="zuo">
             <div class="wenzi">
                 <h2 id="title">近期活动</h2>
@@ -22,7 +21,6 @@
             </div>
         </div>
     </div>
-  </div>
 </template>
 
 <script>
