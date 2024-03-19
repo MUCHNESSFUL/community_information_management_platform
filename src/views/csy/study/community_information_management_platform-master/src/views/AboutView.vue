@@ -21,7 +21,7 @@
     </div>  
     <div id="four" v-show="fourShow">
       <div class="shetuan">
-          <img src="../assets/5.png" alt="" @click="jupmMessage">
+          <img src="../assets/5.png" alt="">
           <div class="wd">
           <h2 style="margin-left: 130px;">A社(老校区)</h2>
           <p class="p">这里是简介</p>
@@ -61,10 +61,7 @@
       },
       showFour(){
         this.fourShow = !this.fourShow
-      },
-      jupmMessage(){
-            this.$router.push('/home/search/message')
-        }
+      }
     },
   }
 </script>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全部社团</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/community.css">
+    <script src="../js/nav.js"></script>
+
+</head>
+<body>
+    <div class="header wrapper">
+        <h1>
+            <a href="index.html"><img src="../images/1.png" alt=""></a>
+        </h1>  
+        <div class="word">社团信息展示平台</div>
+        <div class="nav">
+            <div>
+                <a href="./index.html" class="a1">首页</a>
+                <a href="./community.html" class="a2">全部社团</a>
+                <a href="./person.html" class="a3">个人中心</a>
+            </div>
+        <div class="search">
+            <input id="searchInput" type="text" placeholder="搜索社团" onkeypress="if (event.keyCode == 13) showResult();" onkeydown="entersearch(event)"/>
+            <button id="btn22" onclick="to()"> 
+                <img src="../images/2.png" alt="TUPIAN">
+            </button>
+        </div>
+      </div>
+      </div>
+      <div class="middle">
+        <div class="sidenav">
+            <button class="dropdown-btn">校级社团
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="./community1.html">文化体育类</a>
+              <a href="#">学术科技类</a>
+              <a href="#">自律互动类</a>
+              <a href="#">媒体宣传类</a>
+              <a href="#">思想政治类</a>
+              <a href="#">校园服务类</a>
+              <a href="#">志愿公益类</a>
+              <a href="#">创业创新类</a>
+            </div>
+            <a href="#contact">院级社团</a>
+          </div>
+          
+          <script>
+
+          var dropdown = document.getElementsByClassName("dropdown-btn");
+          var i;
+          
+          for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+            });
+          }
+          </script>
+          
+    </div>
+</body>
