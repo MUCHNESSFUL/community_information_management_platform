@@ -12,6 +12,10 @@ import top from '@/views/top.vue'
 import signup from '@/views/signup.vue'
 import error from  '@/views/404.vue'
 import follow from '@/views/follow.vue'
+import manage from '@/views/manage.vue'
+import notifications from '@/views/notifications.vue'
+import memberManage from '@/views/memberManage.vue'
+import tool from '@/views/tool.vue'
 
 const routes = [
   {
@@ -61,6 +65,31 @@ const routes = [
         path:'follow',
         name:'follow',
         component:follow,
+      },
+      {
+        path:'manage',
+        name:'manage',
+        component:manage,
+        children:[
+          {
+            path:'notifications',
+            name:'notifications',
+            component:notifications,
+            children:[
+              {
+                path:'tool',
+                name:'tool',
+                component:tool
+            }
+              
+            ]
+          },
+          {
+            path:'memberManage',
+            name:'memberManage',
+            component:memberManage,
+          }
+        ]
       },
       {
         path:'search',

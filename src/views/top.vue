@@ -12,6 +12,7 @@
         <button  class="a1 btn1" @click="home_page">首页</button>
         <button  class="a2 btn1" @click="community">全部社团</button>
         <button  class="a3 btn1" @click="center">个人中心</button>
+        <button  class="a4 btn1" @click="manage">管理社团</button>
       </nav>
       
       <hr style="margin: 0;">
@@ -34,6 +35,9 @@
         },
         center(){
           this.$router.push('/home/center')
+        },
+        manage(){
+          this.$router.push('/home/manage')
         }
       }
     }
@@ -66,7 +70,7 @@
   }
   
   .btn1 {
-    margin-right: 120px;
+    margin-right: 100px;
     background-color: transparent;
     border: 0;
     width: 140px;
@@ -75,7 +79,7 @@
     margin-bottom: 50px;
   }
   .btn1:hover{
-    box-shadow:black 0px 0px 10px;
+    box-shadow:0px 3px 6px black;
     border-radius: 5px;
   }
   #searchName {

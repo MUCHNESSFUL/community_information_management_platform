@@ -8,7 +8,7 @@
     <div id="popup1">
         选择社团
         
-        <img src="../assets/cross.jpeg" class="closebtn" id="closebtn1">
+        <img src="../assets/cross.png" class="closebtn" id="closebtn1">
         
         <br />
         <br />
@@ -34,7 +34,7 @@
 
     <div id="popup2">
        
-            <img src="../assets/cross.jpeg" class="closebtn" id="closebtn2">
+            <img src="../assets/cross.png" class="closebtn" id="closebtn2">
        
         字号
         <br />
@@ -62,7 +62,7 @@
     </div>
     <div id="popup3">
        
-        <img src="../assets/cross.jpeg" class="closebtn" id="closebtn3">
+        <img src="../assets/cross.png" class="closebtn" id="closebtn3">
        
         文章类型
         <br />
@@ -94,7 +94,7 @@
 
     <div id="popup4">
         
-    <img src="../assets/cross.jpeg" class="closebtn" id="closebtn4">
+    <img src="../assets/cross.png" class="closebtn" id="closebtn4">
         
         字体颜色
         <br />
@@ -134,6 +134,7 @@
         const closebtn2 = document.getElementById('closebtn2');
         const closebtn3 = document.getElementById('closebtn3');
         const closebtn4 = document.getElementById('closebtn4');
+        console.log(queding2)
         queding2.addEventListener('click', function () {
             father.style.fontFamily = ziti1.value+","+ziti2.value;
             father.style.fontSize = zihao.value+'px'
