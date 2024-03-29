@@ -1,4 +1,5 @@
 <template>
+    <p @click="Admin" style="float: right; margin: 0; user-select: none;">admin</p>
     <div id="top">
       <img @click="home_page" src="../assets/tju.png" style="float: left; width: 6%; height: 6%;" alt="天津大学">
       <p id="title">社团信息展示平台</p>
@@ -12,7 +13,6 @@
         <button  class="a1 btn1" @click="home_page">首页</button>
         <button  class="a2 btn1" @click="community">全部社团</button>
         <button  class="a3 btn1" @click="center">个人中心</button>
-        <button  class="a4 btn1" @click="manage">管理社团</button>
       </nav>
       
       <hr style="margin: 0;">
@@ -21,6 +21,8 @@
   </template>
   
   <script>
+
+
   
     export default {
       methods:{
@@ -36,8 +38,8 @@
         center(){
           this.$router.push('/home/center')
         },
-        manage(){
-          this.$router.push('/home/manage')
+        Admin(){
+          this.$router.push('/admin')
         }
       }
     }

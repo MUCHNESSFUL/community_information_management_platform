@@ -12,10 +12,13 @@ import top from '@/views/top.vue'
 import signup from '@/views/signup.vue'
 import error from  '@/views/404.vue'
 import follow from '@/views/follow.vue'
-import manage from '@/views/manage.vue'
-import notifications from '@/views/notifications.vue'
-import memberManage from '@/views/memberManage.vue'
+import notifications from '@/views/admin/notifications.vue'
+import memberManage from '@/views/admin/memberManage.vue'
 import tool from '@/views/tool.vue'
+import Admin from '@/views/admin/admin.vue'
+import notificationsDetail from '@/views/admin/notificationsDetail.vue'
+import clubmanagement from '@/views/admin/clubManagement.vue'
+import memberData from '@/views/admin/memberData.vue'
 
 const routes = [
   {
@@ -32,6 +35,45 @@ const routes = [
     path:'/404',
     name:'404',
     component:error
+  },
+  {
+    path:'/admin',
+    name:'admin',
+    component:Admin,
+    children:[
+      {
+        path:'notifications',
+        name:'notifications',
+        component:notifications,
+        children:[
+          {
+            path:'tool',
+            name:'tool',
+            component:tool
+        },
+        {
+          path:'notificationsDetail',
+          name:'notificationsDetail',
+          component:notificationsDetail
+        }
+        ]
+      },
+      {
+        path:'memberManage',
+        name:'memberManage',
+        component:memberManage,
+      },
+      {
+        path:'clubmanagement',
+        name:'clubmanagement',
+        component:clubmanagement,
+      },
+      {
+        path:'memberData',
+        name:'memberData',
+        component:memberData,
+      }
+    ]
   },
   {
     path:'/home',
@@ -65,31 +107,6 @@ const routes = [
         path:'follow',
         name:'follow',
         component:follow,
-      },
-      {
-        path:'manage',
-        name:'manage',
-        component:manage,
-        children:[
-          {
-            path:'notifications',
-            name:'notifications',
-            component:notifications,
-            children:[
-              {
-                path:'tool',
-                name:'tool',
-                component:tool
-            }
-              
-            ]
-          },
-          {
-            path:'memberManage',
-            name:'memberManage',
-            component:memberManage,
-          }
-        ]
       },
       {
         path:'search',
@@ -136,7 +153,7 @@ router.beforeEach((to,from,next)=>{
     to.name === 'HomeView' || 
     to.name === 'message' || 
     to.name === 'department' || 
-    to.name === 'departmentDetail' || 
+    to.name === 'departmentDetail' ||
     to.name === 'search' || 
     to.name === 'searchList' || 
     to.name === 'read'){

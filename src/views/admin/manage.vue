@@ -3,7 +3,6 @@
     <button class="select" @click="notice">我的通知</button>
     <button class="select" @click="memberManage">成员管理</button>
   </div>
-  <router-view></router-view>
 </template>
 
 <script>
@@ -11,10 +10,10 @@
 export default {
     methods: {
         notice(){
-            this.$router.push('/home/manage/notifications')
+            this.$router.push('/admin/notifications/notificationsDetail')
         },
         memberManage(){
-            this.$router.push('/home/manage/memberManage')
+            this.$router.push('/admin/memberManage')
         }
     },
 }

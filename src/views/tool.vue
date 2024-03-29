@@ -110,85 +110,85 @@
     </div>
 </template>
 <script>
-        const father=document.getElementById('father')
-        const colorchoice1=document.getElementById('colorchoice1')
-        const colorchoice2=document.getElementById('colorchoice2')
-        const colorchoice3=document.getElementById('colorchoice3')
-        const zihao=document.getElementById('zihao')
-        const ziti1=document.getElementById('ziti1')
-        const ziti2=document.getElementById('ziti2')
-        const queding1 = document.getElementById('queding1')
-        const queding2 = document.getElementById('queding2')
-        const queding3 = document.getElementById('queding3')
-        const queding4 = document.getElementById('queding4')
-        const button1 = document.getElementById('button1');
-        const button2 = document.getElementById('button2');
-        const button3 = document.getElementById('button3');
-        const button4 = document.getElementById('button4');
-        const popup1 = document.getElementById('popup1');
-        const popup2 = document.getElementById('popup2');
-        const popup3 = document.getElementById('popup3');
-        const popup4 = document.getElementById('popup4');
-        const overlay = document.getElementById('overlay');
-        const closebtn1 = document.getElementById('closebtn1');
-        const closebtn2 = document.getElementById('closebtn2');
-        const closebtn3 = document.getElementById('closebtn3');
-        const closebtn4 = document.getElementById('closebtn4');
-        console.log(queding2)
-        queding2.addEventListener('click', function () {
-            father.style.fontFamily = ziti1.value+","+ziti2.value;
-            father.style.fontSize = zihao.value+'px'
-        })
-        queding4.addEventListener('click', function () {
-            father.style.color='rgb'+'('+colorchoice1.value+','+colorchoice2.value+','+colorchoice3.value+')'
-        })
-        button1.addEventListener('click', function () {
-            popup1.style.display = 'block';
-            overlay.style.display = 'block';
-        })
-        button2.addEventListener('click', function () {
-            popup2.style.display = 'block';
-            overlay.style.display = 'block';
-        })
-        button3.addEventListener('click', function () {
-            popup3.style.display = 'block';
-            overlay.style.display = 'block';
-        })
-        button4.addEventListener('click', function () {
-            popup4.style.display = 'block';
-            overlay.style.display = 'block';
-        })
-        closebtn1.addEventListener('click', function () {
-            popup1.style.display = 'none';
-            popup2.style.display = 'none';
-            popup3.style.display = 'none';
-            popup4.style.display = 'none';
-            overlay.style.display = 'none';
-        })
-        closebtn2.addEventListener('click', function () {
-            popup1.style.display = 'none';
-            popup2.style.display = 'none';
-            popup3.style.display = 'none';
-            popup4.style.display = 'none';
-            overlay.style.display = 'none';
-        })
-        closebtn3.addEventListener('click', function () {
-            popup1.style.display = 'none';
-            popup2.style.display = 'none';
-            popup3.style.display = 'none';
-            popup4.style.display = 'none';
-            overlay.style.display = 'none';
-        })
-        closebtn4.addEventListener('click', function () {
-            popup1.style.display = 'none';
-            popup2.style.display = 'none';
-            popup3.style.display = 'none';
-            popup4.style.display = 'none';
-            overlay.style.display = 'none';
-        })
+        // const father=document.getElementById('father')
+        // const colorchoice1=document.getElementById('colorchoice1')
+        // const colorchoice2=document.getElementById('colorchoice2')
+        // const colorchoice3=document.getElementById('colorchoice3')
+        // const zihao=document.getElementById('zihao')
+        // const ziti1=document.getElementById('ziti1')
+        // const ziti2=document.getElementById('ziti2')
+        // const queding1 = document.getElementById('queding1')
+        // const queding2 = document.getElementById('queding2')
+        // const queding3 = document.getElementById('queding3')
+        // const queding4 = document.getElementById('queding4')
+        // const button1 = document.getElementById('button1');
+        // const button2 = document.getElementById('button2');
+        // const button3 = document.getElementById('button3');
+        // const button4 = document.getElementById('button4');
+        // const popup1 = document.getElementById('popup1');
+        // const popup2 = document.getElementById('popup2');
+        // const popup3 = document.getElementById('popup3');
+        // const popup4 = document.getElementById('popup4');
+        // const overlay = document.getElementById('overlay');
+        // const closebtn1 = document.getElementById('closebtn1');
+        // const closebtn2 = document.getElementById('closebtn2');
+        // const closebtn3 = document.getElementById('closebtn3');
+        // const closebtn4 = document.getElementById('closebtn4');
+        // console.log(queding2)
+        // queding2.addEventListener('click', function () {
+        //     father.style.fontFamily = ziti1.value+","+ziti2.value;
+        //     father.style.fontSize = zihao.value+'px'
+        // })
+        // queding4.addEventListener('click', function () {
+        //     father.style.color='rgb'+'('+colorchoice1.value+','+colorchoice2.value+','+colorchoice3.value+')'
+        // })
+        // button1.addEventListener('click', function () {
+        //     popup1.style.display = 'block';
+        //     overlay.style.display = 'block';
+        // })
+        // button2.addEventListener('click', function () {
+        //     popup2.style.display = 'block';
+        //     overlay.style.display = 'block';
+        // })
+        // button3.addEventListener('click', function () {
+        //     popup3.style.display = 'block';
+        //     overlay.style.display = 'block';
+        // })
+        // button4.addEventListener('click', function () {
+        //     popup4.style.display = 'block';
+        //     overlay.style.display = 'block';
+        // })
+        // closebtn1.addEventListener('click', function () {
+        //     popup1.style.display = 'none';
+        //     popup2.style.display = 'none';
+        //     popup3.style.display = 'none';
+        //     popup4.style.display = 'none';
+        //     overlay.style.display = 'none';
+        // })
+        // closebtn2.addEventListener('click', function () {
+        //     popup1.style.display = 'none';
+        //     popup2.style.display = 'none';
+        //     popup3.style.display = 'none';
+        //     popup4.style.display = 'none';
+        //     overlay.style.display = 'none';
+        // })
+        // closebtn3.addEventListener('click', function () {
+        //     popup1.style.display = 'none';
+        //     popup2.style.display = 'none';
+        //     popup3.style.display = 'none';
+        //     popup4.style.display = 'none';
+        //     overlay.style.display = 'none';
+        // })
+        // closebtn4.addEventListener('click', function () {
+        //     popup1.style.display = 'none';
+        //     popup2.style.display = 'none';
+        //     popup3.style.display = 'none';
+        //     popup4.style.display = 'none';
+        //     overlay.style.display = 'none';
+        // })
 
     </script>
-<style>
+<style scoped>
 #container{position:fixed;bottom: 0%;height: 20px;width:1000px;display:flex}
 .closebtn{position: absolute;
 top: 0;right: 0;height: 30px;width: 30px;}

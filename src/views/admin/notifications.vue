@@ -1,6 +1,6 @@
 <template>
     <div id="boss">
-        <img style="float: right; width: 50px; height: 50px; margin-right: 15px;" src="../assets/editPen.png" alt="" @click="editTool">
+        <img style="float: right; width: 50px; height: 50px; margin-right: 15px;" src="../../assets/editPen.png" alt="" @click="editTool">
         <router-view></router-view>
     </div>
 </template>
@@ -9,7 +9,7 @@
 export default {
     methods: {
         editTool(){
-            this.$router.push('/home/manage/tool')
+            this.$router.push('/admin/notifications/tool')
         }
     },
 }

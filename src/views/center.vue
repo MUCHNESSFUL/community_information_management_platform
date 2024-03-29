@@ -30,8 +30,7 @@
                 </table>
             </div>
             <div class="bottom">
-                <button id="button1">编辑</button>
-                <button id="button2">退出登录</button>
+                <button id="button1"><img style="width: 30px; height: 30px;" src="../assets/editPen.png" alt=""></button>
             </div>
         </div>
         <div class="right">
@@ -134,16 +133,10 @@ td:nth-child(2)
 }
 
 #button1{
-    float: left;
-    width: 80px;
-    height: 40px;
-}
-
-#button2{
-    float: left;
-    margin-left: 63%;
-    width: 80px;
-    height: 40px
+    border: 0;
+    background-color: transparent;
+    float: right;
+    margin-top: -50px;
 }
 
 .right{
